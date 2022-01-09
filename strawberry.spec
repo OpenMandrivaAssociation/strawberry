@@ -12,6 +12,7 @@ BuildRequires:	cmake(qt6)
 BuildRequires:	qmake-qt6
 BuildRequires:	boost-devel
 BuildRequires:	liblastfm-devel
+BuildRequires:	pkgconfig(alsa)
 BuildRequires:	pkgconfig(cryptopp)
 BuildRequires:	pkgconfig(glew)
 BuildRequires:	pkgconfig(glu)
