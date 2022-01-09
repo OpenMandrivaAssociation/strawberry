@@ -15,6 +15,7 @@ BuildRequires:	liblastfm-devel
 BuildRequires:	pkgconfig(alsa)
 BuildRequires:	pkgconfig(cryptopp)
 BuildRequires:	pkgconfig(dbus-1)
+BuildRequires:	pkgconfig(fftw3)
 BuildRequires:	pkgconfig(glew)
 BuildRequires:	pkgconfig(glu)
 BuildRequires:	pkgconfig(gstreamer-1.0)
@@ -29,6 +30,7 @@ BuildRequires:	pkgconfig(libplist-2.0)
 # For Google Drive integration
 BuildRequires:	pkgconfig(libsparsehash)
 BuildRequires:	pkgconfig(libusbmuxd-2.0)
+BuildRequires:	pkgconfig(libvlc)
 BuildRequires:	pkgconfig(protobuf) >= 3.3.2
 BuildRequires:	pkgconfig(QJson)
 BuildRequires:	pkgconfig(taglib) >= 1.6
@@ -46,6 +48,9 @@ BuildRequires:  qt6-qttools
 BuildRequires:	pkgconfig(libpulse)
 BuildRequires:	pkgconfig(libxml-2.0)
 BuildRequires:	pkgconfig(sqlite3)
+BuildRequires:	pkgconfig(xkbcommon)
+BuildRequires:	pkgconfig(vulkan)
+BuildRequires:	vulkan-headers
 
 
 Requires:	libprojectm-data
@@ -66,16 +71,13 @@ Strawberry is a music player and music collection organizer. It is a fork of Cle
 It's written in C++ using the Qt toolkit.
 
 %files
-#config %{_sysconfdir}/Clementine/Clementine.conf
-#{_bindir}/clementine
-#{_bindir}/clementine-tagreader
-#{_datadir}/kservices5/clementine-*.protocol
-#{_datadir}/applications/clementine.desktop
-#{_datadir}/metainfo/clementine.appdata.xml
-#{_iconsdir}/hicolor/*/apps/clementine.*
-#if %{with plf}
-#{_bindir}/clementine-spotifyblob
-
+%{_bindir}/strawberry
+%{_bindir}/strawberry-tagreader
+%{_datadir}/applications/org.strawberrymusicplayer.strawberry.desktop
+%{_iconsdir}/hicolor/*x*/apps/strawberry.png
+%{_datadir}/metainfo/org.strawberrymusicplayer.strawberry.appdata.xml
+%{_mandir}/man1/strawberry-tagreader.1.*
+%{_mandir}/man1/strawberry.1.*
 #----------------------------------------------------------------------------
 
 %prep
