@@ -59,7 +59,7 @@ Requires:	gstreamer-tools
 Requires:	gstreamer1.0-flac
 Requires:	gstreamer1.0-plugins-ugly
 Requires:	gstreamer1.0-plugins-bad
-Suggests:	gstreamer%1.0-decoders-audio
+Suggests:	gstreamer1.0-decoders-audio
 # Needed to be able to mount ipod/iphone/ipad (not tested locally) but it's also pulling gvfs
 # which is need at least to mount mtp devices (tested locally)
 Suggests:	gvfs-iphone
