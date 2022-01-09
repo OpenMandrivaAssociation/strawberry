@@ -14,6 +14,7 @@ BuildRequires:	boost-devel
 BuildRequires:	liblastfm-devel
 BuildRequires:	pkgconfig(alsa)
 BuildRequires:	pkgconfig(cryptopp)
+BuildRequires:	pkgconfig(dbus-1)
 BuildRequires:	pkgconfig(glew)
 BuildRequires:	pkgconfig(glu)
 BuildRequires:	pkgconfig(gstreamer-1.0)
