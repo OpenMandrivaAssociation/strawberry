@@ -56,10 +56,10 @@ BuildRequires:	vulkan-headers
 Requires:	libprojectm-data
 Requires:	%{_lib}qt5sql5-sqlite
 Requires:	gstreamer-tools
-Requires:	gstreamer%{gstapi}-flac
-Requires:	gstreamer%{gstapi}-plugins-ugly
-Requires:	gstreamer%{gstapi}-plugins-bad
-Suggests:	gstreamer%{gstapi}-decoders-audio
+Requires:	gstreamer1.0-flac
+Requires:	gstreamer1.0-plugins-ugly
+Requires:	gstreamer1.0-plugins-bad
+Suggests:	gstreamer%1.0-decoders-audio
 # Needed to be able to mount ipod/iphone/ipad (not tested locally) but it's also pulling gvfs
 # which is need at least to mount mtp devices (tested locally)
 Suggests:	gvfs-iphone
