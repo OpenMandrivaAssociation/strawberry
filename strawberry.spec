@@ -11,9 +11,7 @@ BuildRequires:	cmake
 BuildRequires:	cmake(qt6)
 BuildRequires:	qmake-qt6
 BuildRequires:	boost-devel
-BuildRequires:	liblastfm-devel
 BuildRequires:	pkgconfig(alsa)
-BuildRequires:	pkgconfig(cryptopp)
 BuildRequires:	pkgconfig(dbus-1)
 BuildRequires:	pkgconfig(fftw3)
 BuildRequires:	pkgconfig(glew)
@@ -21,40 +19,32 @@ BuildRequires:	pkgconfig(glu)
 BuildRequires:	pkgconfig(gstreamer-1.0)
 BuildRequires:	pkgconfig(gstreamer-plugins-base-1.0)
 BuildRequires:	pkgconfig(gstreamer-tag-1.0)
-BuildRequires:  pkgconfig(gnutls)
+BuildRequires:	pkgconfig(gnutls)
 BuildRequires:	pkgconfig(libcdio)
 BuildRequires:	pkgconfig(libchromaprint)
 BuildRequires:	pkgconfig(libgpod-1.0)
 BuildRequires:	pkgconfig(libmtp)
 BuildRequires:	pkgconfig(libplist-2.0)
-# For Google Drive integration
-BuildRequires:	pkgconfig(libsparsehash)
 BuildRequires:	pkgconfig(libusbmuxd-2.0)
 BuildRequires:	pkgconfig(libvlc)
 BuildRequires:	pkgconfig(protobuf) >= 3.3.2
-BuildRequires:	pkgconfig(QJson)
-BuildRequires:	pkgconfig(taglib) >= 1.6
+BuildRequires:	pkgconfig(taglib) >= 1.11.1
 BuildRequires:	cmake(Qt6Concurrent)
 BuildRequires:	cmake(Qt6Core)
 BuildRequires:	cmake(Qt6DBus)
 BuildRequires:	cmake(Qt6Gui)
 BuildRequires:	cmake(Qt6Network)
-BuildRequires:	cmake(Qt6OpenGL)
 BuildRequires:	cmake(Qt6Sql)
 BuildRequires:	cmake(Qt6Widgets)
-BuildRequires:	cmake(Qt6Xml)
 BuildRequires:	cmake(Qt6Test)
-BuildRequires:  qt6-qttools
+BuildRequires:	qt6-qttools
 BuildRequires:	pkgconfig(libpulse)
-BuildRequires:	pkgconfig(libxml-2.0)
 BuildRequires:	pkgconfig(sqlite3)
 BuildRequires:	pkgconfig(xkbcommon)
 BuildRequires:	pkgconfig(vulkan)
 BuildRequires:	vulkan-headers
 
 
-Requires:	libprojectm-data
-Requires:	%{_lib}qt5sql5-sqlite
 Requires:	gstreamer-tools
 Requires:	gstreamer1.0-flac
 Requires:	gstreamer1.0-plugins-ugly
@@ -87,7 +77,7 @@ It's written in C++ using the Qt toolkit.
 %cmake \
 	-DCMAKE_BUILD_TYPE:STRING=Release \
 	-DBUILD_WERROR=OFF \
-  -DBUILD_WITH_QT6=ON
+	-DBUILD_WITH_QT6=ON
     
 %make_build
 
