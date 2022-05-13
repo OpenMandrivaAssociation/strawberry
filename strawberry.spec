@@ -5,7 +5,7 @@ License:	GPLv2 and GPLv3+ and LGPLv2 and ASL 2.0 and MIT and Boost
 Group:		Sound
 Url:		https://www.strawberrymusicplayer.org/
 Source0:	https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/%{version}/%{name}-%{version}.tar.gz
-Release:	1
+Release:	2
 
 BuildRequires:	cmake
 BuildRequires:	cmake(qt6)
