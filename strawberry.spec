@@ -1,6 +1,6 @@
 Summary:	Audio player and music collection organizer forked from Clementine (and Clementine from Amarok 1.4)
 Name:		strawberry
-Release:	2
+Release:	3
 Version:	1.0.17
 License:	GPLv2 and GPLv3+ and LGPLv2 and ASL 2.0 and MIT and Boost
 Group:		Sound
