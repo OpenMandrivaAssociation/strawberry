@@ -40,6 +40,7 @@ BuildRequires:	cmake(Qt6Sql)
 BuildRequires:	cmake(Qt6Widgets)
 BuildRequires:	cmake(Qt6Test)
 BuildRequires:	cmake(absl)
+BuildRequires:	cmake(KDSingleApplication-qt6)
 BuildRequires:	qt6-qttools
 BuildRequires:	pkgconfig(libpulse)
 BuildRequires:	pkgconfig(sqlite3)
