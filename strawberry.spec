@@ -47,7 +47,7 @@ BuildRequires:	pkgconfig(sqlite3)
 BuildRequires:	pkgconfig(xkbcommon)
 BuildRequires:	pkgconfig(vulkan)
 BuildRequires:	vulkan-headers
-
+BuildRequires:	ninja
 
 Requires:	gstreamer-tools
 Requires:	gstreamer1.0-flac
@@ -76,14 +76,17 @@ It's written in C++ using the Qt toolkit.
 
 %prep
 %autosetup -p1 -n %{name}-%{version}
+# Needed for absl >= 202401
+sed -i -e 's,CMAKE_CXX_STANDARD 17,CMAKE_CXX_STANDARD 20,;s,c++17,c++20,g' CMakeLists.txt
 
 %build
 %cmake \
 	-DCMAKE_BUILD_TYPE:STRING=Release \
 	-DBUILD_WERROR=OFF \
-	-DBUILD_WITH_QT6=ON
+	-DBUILD_WITH_QT6=ON \
+	-G Ninja
     
-%make_build
+%ninja_build
 
 %install
-%make_install -C build
+%ninja_install -C build
