@@ -1,11 +1,11 @@
 Summary:	Audio player and music collection organizer forked from Clementine (and Clementine from Amarok 1.4)
 Name:		strawberry
-Release:	0.rc4.0
+Release:	1
 Version:	1.1.0
 License:	GPLv2 and GPLv3+ and LGPLv2 and ASL 2.0 and MIT and Boost
 Group:		Sound
 Url:		https://www.strawberrymusicplayer.org/
-Source0:	https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/%{version}-rc4/%{name}-%{version}-rc4.tar.gz
+Source0:	https://github.com/strawberrymusicplayer/strawberry/archive/refs/tags/%{version}-rc4/%{name}-%{version}.tar.gz
 
 BuildRequires:	cmake
 BuildRequires:	cmake(qt6)
@@ -75,7 +75,7 @@ It's written in C++ using the Qt toolkit.
 #----------------------------------------------------------------------------
 
 %prep
-%autosetup -p1 -n %{name}-%{version}-rc4
+%autosetup -p1 -n %{name}-%{version}
 # Needed for absl >= 202401
 sed -i -e 's,CMAKE_CXX_STANDARD 17,CMAKE_CXX_STANDARD 20,;s,c++17,c++20,g' CMakeLists.txt
 
