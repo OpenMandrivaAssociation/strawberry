@@ -66,11 +66,9 @@ It's written in C++ using the Qt toolkit.
 
 %files
 %{_bindir}/strawberry
-%{_bindir}/strawberry-tagreader
 %{_datadir}/applications/org.strawberrymusicplayer.strawberry.desktop
 %{_iconsdir}/hicolor/*x*/apps/strawberry.png
 %{_datadir}/metainfo/org.strawberrymusicplayer.strawberry.appdata.xml
-%{_mandir}/man1/strawberry-tagreader.1.*
 %{_mandir}/man1/strawberry.1.*
 #----------------------------------------------------------------------------
 
