@@ -29,9 +29,14 @@ BuildRequires:	pkgconfig(libgpod-1.0)
 BuildRequires:	pkgconfig(libmtp)
 BuildRequires:	pkgconfig(libplist-2.0)
 BuildRequires:	pkgconfig(libusbmuxd-2.0)
+BuildRequires:	pkgconfig(libsparsehash)
 BuildRequires:	pkgconfig(libvlc)
 BuildRequires:	pkgconfig(protobuf) >= 3.3.2
+BuildRequires:	pkgconfig(RapidJSON)
 BuildRequires:	pkgconfig(taglib) >= 1.11.1
+BuildRequires:	qt6-qtbase-theme-gtk3
+BuildRequires:	qt6-qtbase-sql-firebird
+BuildRequires:	qt6-qtbase-sql-mariadb
 BuildRequires:	cmake(Qt6Concurrent)
 BuildRequires:	cmake(Qt6Core)
 BuildRequires:	cmake(Qt6DBus)
