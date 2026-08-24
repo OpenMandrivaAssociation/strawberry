@@ -1,7 +1,7 @@
 Summary:	Audio player and music collection organizer forked from Clementine
 Name:		strawberry
 Version:	1.2.27
-Release:	2
+Release:	3
 License:	GPLv2 and GPLv3+ and LGPLv2 and ASL 2.0 and MIT and Boost
 Group:	Sound
 Url:		https://www.strawberrymusicplayer.org/
@@ -67,6 +67,7 @@ Requires:	gstreamer1.0-flac
 Requires:	gstreamer1.0-plugins-ugly
 Requires:	gstreamer1.0-plugins-bad
 Suggests:	gstreamer1.0-decoders-audio
+Requires:	qt6-qtbase-sql-mariadb
 # Needed to be able to mount ipod/iphone/ipad (not tested locally) but it's also pulling gvfs
 # which is needed at least to mount mtp devices (tested locally)
 Suggests:	gvfs-iphone
