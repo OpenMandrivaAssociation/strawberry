@@ -1,11 +1,12 @@
 Summary:	Audio player and music collection organizer forked from Clementine
 Name:		strawberry
-Version:	1.2.29
+Version:	1.2.30
 Release:	1
 License:	GPLv2 and GPLv3+ and LGPLv2 and ASL 2.0 and MIT and Boost
 Group:	Sound
 Url:		https://www.strawberrymusicplayer.org/
-Source0:	https://github.com/strawberrymusicplayer/strawberry/archive/%{version}/%{name}-%{version}.tar.gz
+# change from gh source to release tarball, per upstream request.
+Source0:	https://github.com/strawberrymusicplayer/strawberry/releases/download/%{version}/strawberry-%{version}.tar.xz
 BuildRequires:	cmake >= 3.13
 BuildRequires:	ninja
 BuildRequires:	qmake-qt6
@@ -97,7 +98,6 @@ sed -i -e 's,CMAKE_CXX_STANDARD 17,CMAKE_CXX_STANDARD 20,;s,c++17,c++20,g' CMake
 
 
 %build
-#	-DBUILD_WITH_QT6=ON \
 %cmake \
 	-DCMAKE_BUILD_TYPE:STRING=Release \
 	-DBUILD_WERROR=OFF \
@@ -109,4 +109,3 @@ sed -i -e 's,CMAKE_CXX_STANDARD 17,CMAKE_CXX_STANDARD 20,;s,c++17,c++20,g' CMake
 
 %install
 %ninja_install -C build
-
