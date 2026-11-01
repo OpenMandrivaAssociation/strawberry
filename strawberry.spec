@@ -1,7 +1,7 @@
 Summary:	Audio player and music collection organizer forked from Clementine
 Name:		strawberry
-Version:	1.2.30
-Release:	2
+Version:	1.2.31
+Release:	1
 License:	GPLv2 and GPLv3+ and LGPLv2 and ASL 2.0 and MIT and Boost
 Group:	Sound
 Url:		https://www.strawberrymusicplayer.org/
@@ -51,6 +51,7 @@ BuildRequires:	pkgconfig(libgpod-1.0)
 BuildRequires:	pkgconfig(libmtp)
 BuildRequires:	pkgconfig(libplist-2.0)
 BuildRequires:	pkgconfig(libpulse)
+BuildRequires:	pkgconfig(libsecret-1)
 BuildRequires:	pkgconfig(libusbmuxd-2.0)
 BuildRequires:	pkgconfig(libsparsehash)
 BuildRequires:	pkgconfig(libvlc)
@@ -58,6 +59,7 @@ BuildRequires:	pkgconfig(protobuf) >= 3.3.2
 BuildRequires:	pkgconfig(RapidJSON)
 BuildRequires:	pkgconfig(sqlite3)
 BuildRequires:	pkgconfig(taglib) >= 1.12
+BuildRequires:	pkgconfig(uchardet)
 BuildRequires:	pkgconfig(vulkan)
 BuildRequires:	pkgconfig(x11)
 BuildRequires:	pkgconfig(xext)
